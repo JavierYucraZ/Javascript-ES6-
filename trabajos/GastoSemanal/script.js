@@ -138,10 +138,3 @@ formulario.addEventListener('submit', function(e){
     }
 })
 
-// 2da evaluacion
-// Limitar el gasto -> boton disabled
-// Notificacion del restante cambia de color dinamicamente
-// 70% -> verde(is-success)
-// 40% y 69& -> amarilla(is-warning)
-// 39% -> roja(is-danger)
-
