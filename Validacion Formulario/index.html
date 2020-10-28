@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Document</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <style>
+    .gifs{
+      width: 100%;
+      display: flex;
+      justify-content: center;
+    }
+    #carga, #enviado{
+      display: none;
+      width: 150px;
+    }
+  </style>
+</head>
+<body>
+  
+  <nav>
+    <div class="nav-wrapper" style="margin-left: 25px">
+      <a href="#" class="brand-logo">Logo</a>
+    </div>
+  </nav>
+
+  <div class="container" style="margin-top: 25px">
+    <div class="row">
+    <form class="col s12 center z-depth-3" id="formulario" style="padding: 15px">
+      <h2 style="margin-top: 15px !important;">Envienos un mensaje</h2>
+      <div class="row" style="padding: 0 30px">
+        <div class="input-field col s6">
+          <input id="nombre" type="text" title="ingrese su nombre">
+          <label for="Nombre">Nombre</label>
+        </div>
+        <div class="input-field col s6">
+          <input id="email" type="email" id="email" title="ingrese su correo electronico">
+          <label for="email">Email</label>
+        </div>
+      </div>
+      <div class="row" style="padding: 0 30px">
+        <div class="input-field col s12">
+          <input type="text" id="asunto" title="ingrese su asunto">
+          <label for="asunto">Asunto</label>
+        </div>
+      </div>
+
+      <div class="row" style="padding: 0 30px">
+        <div class="input-field col s12">
+          <textarea name="mensaje" id="mensaje" class="materialize-textarea" title="ingrese su mensaje"></textarea>
+          <label for="mensaje">Mensaje</label>
+        </div>
+      </div>
+
+      <div class="gifs">
+        <img src="spinner.gif" id="carga">
+        <img src="mail.gif" id="enviado">
+      </div>
+
+      <button type="submit" id="botonEnviar" class="btn-large waves-effect waves-light" style="width: 30%; margin-right: 25px">Enviar
+        <i class="material-icons right">send</i>
+      </button>
+
+      <button type="reset" id="botonResetear" class="btn-large waves-effect waves-light" style="width: 30%; margin-left: 25px">Limpiar
+        <i class="material-icons right">clear_all</i>
+      </button>
+
+    </form>
+  </div>
+
+  </div>
+
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+  <script type="text/javascript" src="script.js"></script>
+</body>
+</html>

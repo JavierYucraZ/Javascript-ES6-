@@ -1,0 +1,26 @@
+[
+	{
+		"id" : 1,
+		"nombre" : "Javier",
+		"apellido" : "Yucra",
+		"telefono" : 70190260
+	},
+	{
+		"id" : 2,
+		"nombre" : "Astrit",
+		"apellido" : "Altamirano",
+		"telefono" : 77889944
+	},
+	{
+		"id" : 3,
+		"nombre" : "Roger",
+		"apellido" : "Alvarez",
+		"telefono" : 7125846
+	},
+	{
+		"id" : 4,
+		"nombre" : "Karolina",
+		"apellido" : "Castillo",
+		"telefono" : 7799663
+	}
+]

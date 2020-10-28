@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.0/css/bulma.min.css">
+</head>
+<body>
+	<!-- ISO, es la organizacion internacional de estandarizacion -->
+	<!-- para los lenguajes se utiliza ISO 639-1 que es una lista de idiomas -->
+	<!-- para los codigos de paises ISO_3166-1 -->
+	<div class="container mt-5">
+		<div class="columns">
+		  <div class="column box mr-3">
+		    <h2 class="title">Buscar por nombre</h2>
+		    <form id="nombre">
+		    	<div class="field">
+				  <div class="control has-icons-left">
+				    <div class="select is-fullwidth">
+				      <select id="nombres">
+				        <option value="de">Alemania</option>
+				        <option value="au">Australia</option>
+				        <option value="bo">Bolivia</option>
+				      </select>
+				    </div>
+				    <div class="icon is-small is-left">
+				      <i class="fas fa-globe-americas"></i>
+				    </div>
+				  </div>
+				</div>
+				<button class="button is-success is-outlined is-fullwidth">Buscar</button>
+		    </form>
+		  </div>
+		  <div class="column box mr-3">
+		    <h2 class="title">Buscar por Region</h2>
+		    <form id="region">
+		    	<div class="field">
+				  <div class="control has-icons-left">
+				    <div class="select is-fullwidth">
+				      <select id="regiones">
+				        <option value="Africa">Africa</option>
+				        <option value="Americas">America</option>
+						<option value="Asia">Asia</option>
+						<option value="Europe">Europa</option>
+						<option value="Oceania">Oceania</option>
+				      </select>
+				    </div>
+				    <div class="icon is-small is-left">
+				      <i class="fas fa-globe"></i>
+				    </div>
+				  </div>
+				</div>
+				<button class="button is-info is-outlined is-fullwidth">Buscar</button>
+		    </form>
+		  </div>
+		  <div class="column box">
+		    <h2 class="title">Buscar por Idioma</h2>
+		    <form id="idioma">
+		    	<div class="field">
+				  <div class="control has-icons-left">
+				    <div class="select is-fullwidth">
+				      <select id="idiomas">
+				        <option value="es">Español</option>
+				        <option value="en">Ingles</option>
+				        <option value="ja">Japones</option>
+				      </select>
+				    </div>
+				    <div class="icon is-small is-left">
+				      <i class="fas fa-language"></i>
+				    </div>
+				  </div>
+				</div>
+				<button class="button is-dark is-outlined is-fullwidth">Buscar</button>
+		    </form>
+		  </div>
+		</div>
+
+		<div class="columns is-centered" id="resNombre">
+			<!-- <div class="column is-two-fifths">
+				<div class="card">
+				  <div class="card-image">
+				    <figure class="image is-5by3">
+				      <img src="${respuesta.flag}" alt="Placeholder image">
+				    </figure>
+				  </div>
+				  <div class="card-content">
+				      <p class="title">Nombre : </p>
+				      <p class="subtitle">Capital : </p>
+				      <p class="subtitle">Region : </p>
+				      <p class="subtitle">Poblacion : </p>
+				  </div>
+				</div>
+			</div> -->
+		</div>
+
+		<div class="columns is-centered">
+			<h2 class="title">Resultados por Region</h2>
+			<div class="column is-four-fifths">
+				<table class="table is-striped is-bordered is-fullwidth">
+				  <thead>
+				    <tr>
+				      <th>Nombre</th>
+				      <th>Capital</th>
+				      <th>Region</th>
+				      <th>Poblacion</th>
+				    </tr>
+				  </thead>
+				  <tbody id="resRegion">
+				    <!-- <tr>
+				      <td>
+				      	Nombre
+				      </td>
+				      <td>
+				      	Capital
+				      </td>
+				      <td>
+				      	Region
+				      </td>
+				      <td>
+				      	Poblacion
+				      </td>
+				    </tr> -->
+
+				    <!-- <tr>
+				      <td>
+				      	Nombre
+				      </td>
+				      <td>
+				      	Capital
+				      </td>
+				      <td>
+				      	Region
+				      </td>
+				      <td>
+				      	Poblacion
+				      </td>
+				    </tr> -->
+
+				    <!-- <tr>
+				      <td>
+				      	Nombre
+				      </td>
+				      <td>
+				      	Capital
+				      </td>
+				      <td>
+				      	Region
+				      </td>
+				      <td>
+				      	Poblacion
+				      </td>
+				    </tr> -->
+				    
+				  </tbody>
+				</table>
+			</div>
+			
+		</div>
+
+		<div class="columns is-centered">
+			<h2 class="title">Resultados por Lenguaje</h2>
+			<div class="column is-four-fifths">
+				<table class="table is-striped is-bordered is-fullwidth">
+				  <thead>
+				    <tr>
+				      <th>Nombre</th>
+				      <th>Capital</th>
+				      <th>Region</th>
+				      <th>Poblacion</th>
+				    </tr>
+				  </thead>
+				  <tbody id="resIdioma">
+				    <!-- <tr>
+				      <td>
+				      	Nombre
+				      </td>
+				      <td>
+				      	Capital
+				      </td>
+				      <td>
+				      	Region
+				      </td>
+				      <td>
+				      	Poblacion
+				      </td>
+				    </tr> -->
+
+				    <!-- <tr>
+				      <td>
+				      	Nombre
+				      </td>
+				      <td>
+				      	Capital
+				      </td>
+				      <td>
+				      	Region
+				      </td>
+				      <td>
+				      	Poblacion
+				      </td>
+				    </tr> -->
+
+				    <!-- <tr>
+				      <td>
+				      	Nombre
+				      </td>
+				      <td>
+				      	Capital
+				      </td>
+				      <td>
+				      	Region
+				      </td>
+				      <td>
+				      	Poblacion
+				      </td>
+				    </tr> -->
+				    
+				  </tbody>
+				</table>
+			</div>
+			
+		</div>
+
+
+		
+
+	</div>
+
+	
+
+	
+
+<script defer src="https://use.fontawesome.com/releases/v5.3.1/js/all.js"></script>
+<script src="script.js"></script>
+</body>
+</html>

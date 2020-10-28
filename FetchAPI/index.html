@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/skeleton/2.0.4/skeleton.min.css">
+    <style>
+        li{
+            list-style: none;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Fetch API, es la nueva tecnologia que se utiliza para realizar
+        peticiones
+    aunque AJAX tambien es bastante usado por muchos desarrolladores
+    poco a poco los proyectos usan mas esta nueva caracteristica
+    Investigar diferencias entre AJAX y FETCH -->
+
+    <div class="container" style="margin-top: 40px;">
+        <a href="" id="txtBoton" class="button">Cargar txt</a>
+        <a href="" id="jsonBoton" class="button">Cargar Json</a>
+        <a href="" id="apiBoton" class="button">Cargar API</a>
+    </div>
+    
+
+    <div class="container">
+        <div id="resultado">
+
+        </div>
+    </div>
+
+    <div class="container">
+        <div id="empleados">
+
+        </div>
+    </div>
+
+    <div class="container">
+        <div id="imagenes">
+
+        </div>
+    </div>
+
+    <script src="promise.js"></script>
+    <script src="script.js"></script>
+
+</body>
+</html>

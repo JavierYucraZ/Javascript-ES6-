@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/skeleton/2.0.4/skeleton.min.css">
+</head>
+<body>
+
+	<!-- 
+	APIs = Application Programming Interface
+	Son funciones, metodos, informacion que ofrece una libreria
+	para que otro software lo pueda utilizar
+
+	Su consumo se realiza mediante peticiones
+	Nosotros estructuramos la peticion como la API la requiere
+	entonces asi la podemos enviar y nos devolvera alguna respuesta
+
+	REST API
+	REST = Representational State transfer
+	Puede ser programada en cualquier lenguaje(java, c#, javascript)
+	y tambien puede ser utilizada desde cualquier lenguaje, no importa
+	en cual se haya escrito
+
+	Lo que hace REST, es estandarizar como se deben poner a disposicion
+	los recursos que queremos consumir
+
+	Nos dice que una API debe responder a las peticiones http : GET, POST, PUT, PATCH, DELETE
+	Asi mismo, tampoco cambia que cada API pueda tener sus propias reglas
+
+	End Points
+	Los end points de una API son las rutas que se utilizan para realizar las peticiones
+	Algunas reglas que nos dice REST
+	Tenemos una api de clientes, queremos hacer peticiones
+	- Todos los clientes : Peticion get "/clientes"
+	- Un cliente : Peticion get "/clientes/nroCliente"
+	- Crear un cliente : Peticion post "/clientes"
+	- Editar un cliente : Peticion put "/clientes/nroCliente"
+	- Borrar un cliente : Peticion delete "/clientes/nroCliente"
+	 -->
+
+	 <div class="container">
+	 	<a href="" class="button" id="cargar">Cargar Usuarios</a>
+	 	<div id='listado'>
+	 		
+	 	</div>
+	 </div>
+	
+	<script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<style>
+		.container{
+			margin-top: 40px
+		}
+	</style>
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/skeleton/2.0.4/skeleton.min.css">
+</head>
+<body>
+	
+	<!-- Ajax -> es un tecnica de programacion que se utiliza para
+	que nuestras paginas sean mucho mas dinamicas al momento de interactuar
+	con las respuestas de un servidor, hay ocasiones en que estas peticiones
+	hacia el servidor pueden tomarse un buen tiempo para responder
+	y nosotros no podemos mantener la pagina en espera mientras la
+	respuesta llega, debemos seguir ejecutando nuestra pagina de manera normal
+	hasta que la respuesta llegue, a esto se le llama programacion asincrona -->
+	<!-- En este caso, simularemos que estamos trabajando en un servidor y solicitamos
+	informacion a un archivo, esto lo pediremos con el uso de ajax -->
+	<div class="container">
+		<a href="" class="button" id="cargar">Cargar datos</a>
+		<div id="listado"></div>
+	</div>
+
+
+	<div class="container">
+		<button id="boton1">Empleado</button>
+		<button id="boton2">Empleados</button>
+		<br><br>
+		<h2>Empleado</h2>
+		<div id="empleado"></div>
+		<h2>Empleados</h2>
+		<div id="empleados"></div>
+	</div>
+
+
+	<script src="script.js"></script>
+	<script src="AjaxJson.js"></script>
+</body>
+</html>
